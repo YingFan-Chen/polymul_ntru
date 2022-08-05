@@ -1,28 +1,18 @@
 ../hal-opencm3.o: ../hal-opencm3.c ../hal.h \
- /Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
- /Applications/ARM/arm-none-eabi/include/stdint.h \
- /Applications/ARM/arm-none-eabi/include/machine/_default_types.h \
- /Applications/ARM/arm-none-eabi/include/sys/features.h \
- /Applications/ARM/arm-none-eabi/include/_newlib_version.h \
- /Applications/ARM/arm-none-eabi/include/sys/_intsup.h \
- /Applications/ARM/arm-none-eabi/include/sys/_stdint.h \
- /Applications/ARM/arm-none-eabi/include/stdlib.h \
- /Applications/ARM/arm-none-eabi/include/machine/ieeefp.h \
- /Applications/ARM/arm-none-eabi/include/_ansi.h \
- /Applications/ARM/arm-none-eabi/include/newlib.h \
- /Applications/ARM/arm-none-eabi/include/sys/config.h \
- /Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
- /Applications/ARM/arm-none-eabi/include/sys/reent.h \
- /Applications/ARM/arm-none-eabi/include/_ansi.h \
- /Applications/ARM/arm-none-eabi/include/sys/_types.h \
- /Applications/ARM/arm-none-eabi/include/machine/_types.h \
- /Applications/ARM/arm-none-eabi/include/sys/lock.h \
- /Applications/ARM/arm-none-eabi/include/sys/cdefs.h \
- /Applications/ARM/arm-none-eabi/include/machine/stdlib.h \
- /Applications/ARM/arm-none-eabi/include/alloca.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h \
+ /usr/include/newlib/stdlib.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h \
+ /usr/include/newlib/_newlib_version.h /usr/include/newlib/sys/config.h \
+ /usr/include/newlib/sys/features.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stddef.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/machine/stdlib.h /usr/include/newlib/alloca.h \
  ../libopencm3/include/libopencm3/cm3/dwt.h \
  ../libopencm3/include/libopencm3/cm3/common.h \
- /Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/9.2.1/include/stdbool.h \
  ../libopencm3/include/libopencm3/cm3/memorymap.h \
  ../libopencm3/include/libopencm3/cm3/nvic.h \
  ../libopencm3/include/libopencm3/dispatch/nvic.h \

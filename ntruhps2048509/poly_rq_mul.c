@@ -1,6 +1,7 @@
 
 #include <stdint.h>
 #include <stddef.h>
+#include <string.h>
 
 #include "params.h"
 #include "poly_rq_mul.h"
@@ -49,7 +50,7 @@ void poly_Rq_mul(poly *r, const poly *a, const poly *b)
   }
 
   //toom4_k2x2_mul(ab, ab, ab+L);
-  schonhage(ab, a, b+L);
+  schonhage(ab, ab, ab+L);
 
   for (i=0; i<NTRU_N; i++) {
     r->coeffs[i] = ab[i] + ab[NTRU_N + i];
@@ -434,7 +435,7 @@ static void schonhage(uint16_t ab[2*L], const uint16_t a[L], const uint16_t b[L]
   /*
       resize
   */
-  memset(ab, 0, sizeof(ab));
+  memset(ab, 0, L << 2);
   for(i = 0, j = 0; i < mn; i += m, j += n)
   {
       for(k = 0; k < m; k ++)
